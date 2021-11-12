@@ -19,11 +19,15 @@
 body {
     font-size: 1.125rem;
     font-family: 'Barlow', sans-serif;
-    /*font-family: 'Fraunces', serif;*/
+
 }
 
 header {
     background-image: url("/images/mobile/image-header.jpg");
+    background-size: cover;
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 .container {
@@ -86,18 +90,43 @@ nav ul li a:hover {
     text-transform: uppercase;
     cursor: pointer;
 }
+/*class for showing and hiding nav menu*/
+.show {
+    display: flex;
+}
 
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Fraunces', serif;
+    margin: 2.5em 0;
+    font-size: 2rem;
+}
+
+/*arrow svg styling*/
 .arrow {
     display: flex;
     justify-content: center;
 }
 
-.show {
-    display: flex;
-}
-
 
 @media only screen and (min-width: 650px) {
+
+    header {
+        background-image: url("/images/desktop/image-header.jpg");
+        background-size: cover;
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+
+    .title {
+        margin: 2em 0;
+        font-size: 2.2rem;
+        letter-spacing: 5px;
+    }
+
     svg#hamburger {
         display: none;
     }
@@ -109,9 +138,6 @@ nav ul li a:hover {
         
     }
 
-    nav {
-        border: 1px solid red;
-    }
 
     nav ul, nav ul li {
         margin: 0;
@@ -120,6 +146,11 @@ nav ul li a:hover {
 
     nav ul li a {
         color: var(--white);
+    }
+
+    nav ul li a:focus,
+    nav ul li a:hover {
+        background-color: var(--white);
     }
 
     div#clip {
