@@ -1,0 +1,134 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desat-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-mod-cyan: hsl(168, 34%, 41%);
+
+    --dark-desat-blue: hsl(212, 27%, 19%);
+    --vdark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: 'Barlow', sans-serif;
+    /*font-family: 'Fraunces', serif;*/
+}
+
+header {
+    background-image: url("/images/mobile/image-header.jpg");
+}
+
+.container {
+    padding: 1.5rem;
+}
+
+nav, nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    background-color: var(--white);
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    display: none;
+    position: relative;
+}
+
+div#menu_clip {
+    background-color: var(--white);
+    clip-path: polygon(100% 0, 75% 15%, 100% 15%);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 78px;
+    right: 32px;
+    display: none;
+}
+
+nav ul li {
+    margin: .8em 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--vdark-grayish-blue);
+    padding: .8rem 1.5rem;
+    border-radius: 20px;
+    font-size: .8rem;
+}
+
+nav ul li a:focus,
+nav ul li a:hover {
+    background-color: var(--yellow);
+    color: var(--dark-desat-blue);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.show {
+    display: flex;
+}
+
+
+@media only screen and (min-width: 650px) {
+    svg#hamburger {
+        display: none;
+    }
+
+    nav, nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    nav {
+        border: 1px solid red;
+    }
+
+    nav ul, nav ul li {
+        margin: 0;
+        background-color: unset;
+    }
+
+    nav ul li a {
+        color: var(--white);
+    }
+
+    div#menu_clip {
+        width: 0;
+        height: 0;
+    }
+    
+    .logo {
+        align-items: center;
+    }
+
+}
