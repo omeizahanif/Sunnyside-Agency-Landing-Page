@@ -111,7 +111,7 @@ nav ul li a:hover {
     text-align: center;
     color: var(--white);
     font-family: 'Fraunces', serif;
-    margin: 2.5em 0;
+    margin: 1em auto;
     font-size: 3rem;
     letter-spacing: .5rem;
 }
@@ -151,7 +151,7 @@ section h2 {
 .hero_content_2 a {
     text-transform: uppercase;
     position: relative;
-    display: inline-block;
+    display: block;
     margin-bottom: 2rem;
     font-weight: 900;
     color: black;
@@ -183,10 +183,21 @@ section h2 {
     opacity: 1;
 }
 
+.hero_content_1 h2,
+.hero_content_2 h2 {
+    margin-bottom: 0;
+}
+
 
 .hero_content_1 p,
 .hero_content_2 p {
     color: var(--dark-grayish-blue);
+    margin: 2em auto;
+}
+
+.design p,
+.photography p {
+    margin: 3em auto;
 }
 
 .hero_content_1 p,
@@ -194,7 +205,6 @@ section h2 {
 .design p,
 .photography p {
     line-height: 1.7;
-    margin: 2em auto;
     max-width: 80%;
 }
 
@@ -391,6 +401,20 @@ section h2 {
 
     .hero_content_2 {
         flex-direction: row;
+    }
+
+    .hero_content_1 div,
+    .hero_content_2 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .hero_content_1 p,
+    .hero_content_2 p {
+        text-align: left;
     }
 
     .hero_content_1 img,
