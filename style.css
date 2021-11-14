@@ -213,7 +213,7 @@ section h2 {
 }
 
 .photography {
-    background-image: url("/images/desktop/image-photography.jpg");
+    background-image: url("/images/mobile/image-photography.jpg");
 }
 
 .design, 
@@ -420,6 +420,14 @@ section h2 {
     .hero_content_1 img,
     .hero_content_2 img {
         max-width: 50%;
+    }
+
+    .design {
+        background-image: url("/images/desktop/image-graphic-design.jpg");
+    }
+    
+    .photography {
+        background-image: url("/images/desktop/image-photography.jpg");
     }
 
     .design p, 
