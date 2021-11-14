@@ -37,6 +37,10 @@ p {
     font-size: 0.9rem;
 }
 
+ul {
+    list-style: none;
+}
+
 .container {
     padding: 2rem;
 }
@@ -58,7 +62,7 @@ nav, nav ul {
 
 nav ul {
     background-color: var(--white);
-    list-style: none;
+    
     align-items: center;
     justify-content: center;
     padding: 1em 0;
@@ -123,7 +127,8 @@ section {
 }
 
 section h2,
-section a {   
+section a,
+.name {   
     font-family: 'Fraunces', serif;
 }
 
@@ -139,7 +144,7 @@ section h2 {
 
 .hero_content_1 div,
 .hero_content_2 div {
-    padding: 2.5rem;
+    padding: 2rem;
 }
 
 .hero_content_1 a,
@@ -189,7 +194,8 @@ section h2 {
 .design p,
 .photography p {
     line-height: 1.7;
-    margin: 2em 0;
+    margin: 2em auto;
+    max-width: 80%;
 }
 
 .design {
@@ -268,6 +274,63 @@ section h2 {
 .position {
     font-size: 0.8rem;
     color: var(--grayish-blue);
+    font-weight: 900;
+}
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.showcase img {
+    display: inline-block;
+    width: 50%;
+}
+
+.footer_block,
+.footer_block a {
+    color: var(--dark-desat-cyan);
+    background-color: hsl(167, 54%, 73%);
+}
+
+.footer_block {
+    padding: 2em;
+}
+
+.footer_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em auto;
+    padding: 0;  
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    max-width: 50%;
+    margin: 3em auto 0;
+}
+
+.footer_nav a {
+    font-size: 1rem;
+}
+
+.socials a svg {
+    fill: #2C7566;
+    fill-rule: "nonzero";
+}
+
+.socials a svg:hover {
+    fill: var(--white);
+}
+
+.footer_nav a:hover {
+    color: var(--white);
 }
 
 
@@ -335,7 +398,33 @@ section h2 {
         max-width: 50%;
     }
 
+    .design p, 
+    .photography p {
+        max-width: 40%;
+    }
+
+    .testimonial_block {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .showcase img {
+        max-width: 25%;
+    }
+
+    .footer_nav {
+        max-width: 50%;
+    }
+    
+    .socials {
+        max-width: 25%;
+    }
+
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1em;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
