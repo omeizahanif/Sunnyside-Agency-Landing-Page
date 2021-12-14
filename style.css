@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-image: url("/images/mobile/image-header.jpg");
+    background-image: url("./images/mobile/image-header.jpg");
     background-size: cover;
     background-position: 50% 80%;
     background-repeat: no-repeat;
@@ -209,11 +209,11 @@ section h2 {
 }
 
 .design {
-    background-image: url("/images/mobile/image-graphic-design.jpg");
+    background-image: url("./images/mobile/image-graphic-design.jpg");
 }
 
 .photography {
-    background-image: url("/images/mobile/image-photography.jpg");
+    background-image: url("./images/mobile/image-photography.jpg");
 }
 
 .design, 
@@ -347,7 +347,7 @@ section h2 {
 @media only screen and (min-width: 650px) {
 
     header {
-        background-image: url("/images/desktop/image-header.jpg");
+        background-image: url("./images/desktop/image-header.jpg");
         background-size: cover;
         background-position: 50% 0%;
         background-repeat: no-repeat;
@@ -423,11 +423,11 @@ section h2 {
     }
 
     .design {
-        background-image: url("/images/desktop/image-graphic-design.jpg");
+        background-image: url("./images/desktop/image-graphic-design.jpg");
     }
     
     .photography {
-        background-image: url("/images/desktop/image-photography.jpg");
+        background-image: url("./images/desktop/image-photography.jpg");
     }
 
     .design p, 
